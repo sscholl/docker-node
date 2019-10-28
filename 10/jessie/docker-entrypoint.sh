@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 # Openshift: Ensure that assigned uid has entry in /etc/passwd.
