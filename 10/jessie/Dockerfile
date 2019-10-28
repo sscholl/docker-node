@@ -63,6 +63,7 @@ RUN set -ex \
 
 # Adjust permissions on home directory so writable by group root.
 RUN chgrp -Rf root /home/node && chmod -Rf g+w /home/node
+RUN chmod g+w /etc/passwd 
 
 COPY docker-entrypoint.sh /usr/local/bin/
 ENTRYPOINT ["docker-entrypoint.sh"]
